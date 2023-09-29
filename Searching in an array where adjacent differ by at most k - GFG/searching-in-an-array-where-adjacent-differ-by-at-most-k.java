@@ -74,7 +74,7 @@ class Complete{
             }
             
             //calculate steps
-            //a
+            //math.abs is to get the only positive value
             int steps = Math.abs(arr[index]-x)/k;
             
             //update the index
