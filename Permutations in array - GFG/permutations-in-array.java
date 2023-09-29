@@ -42,28 +42,8 @@ class Solution {
     public boolean isPossible(long a[], long b[], int n, long k) {
         // Your code goes here
         
-        //sort the one array in ascending order and anotner one in 
-        //descending order then compare
+        //sort the one array 
         
-        //sorting in acending ordrer
-        // Arrays.sort(a);
-        
-        
-        // //sorting in descending order
-        // Arrays.sort(b,Collections.reverseOrder());
-        
-        //checking for condition
-          
-          
-        //  for(int i=0; i<n; i++){
-        //       if(a[i]+b[i] < k){
-        //           return false;
-        //       }
-        //  }
-        //   return true;
-        
-        // Your code goes here
-          // Your code goes here
         Arrays.sort(a);
         Arrays.sort(b);
        
