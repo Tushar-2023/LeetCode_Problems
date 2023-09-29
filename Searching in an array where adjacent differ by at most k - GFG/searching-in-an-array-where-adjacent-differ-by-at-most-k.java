@@ -56,14 +56,32 @@ class Complete{
         //Complete the function
         
         //brutforce approcach
+        // for(int i=0; i<n; i++){
+        //     if(arr[i] == x){
+        //         return i;
+        //     }
+        // }
+        // return -1;
         
-        for(int i=0; i<n; i++){
-            if(arr[i] == x){
-                return i;
+        
+        //optimized approach
+        int index=0;
+        
+        while(index<n){
+            //check
+            if(arr[index]==x){
+                return index;
             }
+            
+            //calculate steps
+            //a
+            int steps = Math.abs(arr[index]-x)/k;
+            
+            //update the index
+            index = index+Math.max(1,steps);
         }
         
-        return -1;
+        return  -1;
         
     }
     
