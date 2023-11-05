@@ -12,6 +12,6 @@
  * f(); // "Hello World"
  */
     
-    var createHelloWorld = function() {
+    let createHelloWorld = function() {
         return () => "Hello World";
 };
